@@ -7,7 +7,6 @@ import { NewsletterForm } from '../forms/NewsletterForm'
 const guestLinks = [
   { label: 'Home', to: '/landing' },
   { label: 'About', to: '/about' },
-  { label: 'Plans', to: '/plans' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Contact', to: '/contact' }
 ]
@@ -142,8 +141,8 @@ export const MainLayout = () => {
           </div>
         )}
       </header>
-      <main className="flex-1">
-        <div className="mx-auto w-full max-w-6xl px-4 py-8">
+      <main className="flex-1 flex flex-col">
+        <div className="mx-auto w-full max-w-6xl px-4 py-8 flex-1 flex flex-col">
           <Outlet />
         </div>
       </main>

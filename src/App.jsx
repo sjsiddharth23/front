@@ -20,7 +20,6 @@ function App() {
       <Route element={<MainLayout />}>
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/plans" element={<PlansPage />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<LoginPage />} />

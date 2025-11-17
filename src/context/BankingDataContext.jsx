@@ -97,7 +97,8 @@ export const BankingDataProvider = ({ children }) => {
 
   useEffect(() => {
     loadAll()
-  }, [loadAll])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const wrapAction = useCallback(
     async (fn) => {
